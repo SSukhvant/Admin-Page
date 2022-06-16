@@ -1,6 +1,6 @@
 import React from 'react';
 import './Activitybar.scss';
-import { Images } from '../../constants';
+import profile from '../../assets/user.png';
 import {ReactComponent as Rightarrow} from '../../assets/Vector.svg';
 import {BsThreeDotsVertical} from 'react-icons/bs';
 
@@ -8,7 +8,7 @@ const Activitybar = () => {
   return (
     <div className='app__activitybar'>
     <div className='app__user'>
-    <img src={Images.profile} alt="User profile"/>
+    <img src={profile} alt="User profile"/>
     <div>
     <h4>Oliver Smith</h4>
     <p>Vender</p>

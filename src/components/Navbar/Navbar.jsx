@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
-import { Images } from '../../constants';
+import profile from '../../assets/user.png';
 import {ReactComponent as Rightarrow} from '../../assets/Vector.svg';
 import { ReactComponent as Search } from '../../assets/search.svg';
 
@@ -14,7 +14,7 @@ const Navbar = () => {
       <input type="search" placeholder="search for products"/>
       </div>
       <div className='app__user'>
-      <img src={Images.profile} alt="User profile"/>
+      <img src={profile} alt="User profile"/>
       <div>
       <h4>Oliver Smith</h4>
       <p>Vender</p>
