@@ -1,0 +1,95 @@
+.app__header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .app__logo{
+            flex: 1 2 378px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 61px;
+        
+            a{
+                font-family: 'Inter', sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 48.41px;
+                font-style: normal;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .app__search{
+            flex: 2 1 996px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 31px 61px;
+
+            i{
+                position: absolute;
+                margin-left: 24px;
+            }
+
+            input {
+                flex:1 1 80%;
+                height: 72px;
+                background: #f7f7f7;
+                border-radius: 5px;
+                border-style: none;
+                font-size: 16px;
+                padding: 0 80px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        .app__user{
+            flex: 1 2 430px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 31px 61px;
+
+            img{
+                height: auto;
+                width: 100px;
+            }
+
+            h4{
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 1px;
+            }
+
+            p{
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+            }
+
+            button {
+                height: 50px;
+                width: 50px;
+                background: white;
+                border: none;
+                cursor: pointer;
+                padding: 16px;
+                margin-left: 16px;
+                border-radius: 100%;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+        }
+    }
+}

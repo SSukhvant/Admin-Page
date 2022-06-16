@@ -1,0 +1,228 @@
+.app__home{
+    position: absolute;
+    top: 0;
+    right: 430px;
+    left: 378px;
+    // flex: 2 1 996px;
+    padding: 31px 61px;
+
+    .app__search{
+        flex: 2 1 996px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        i{
+            position: absolute;
+            margin-left: 24px;
+        }
+
+        input {
+            flex:1 1 80%;
+            height: 72px;
+            background: #f7f7f7;
+            border-radius: 5px;
+            border-style: none;
+            font-size: 16px;
+            padding: 0 80px;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .app__home-main{
+        h2{
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 35px;
+            color:#192434;
+        }
+        p{
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: #6e6f7d;
+        }
+
+        .app__home-status{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            .app__home-live{
+                background: #6590ff;
+                color: white;
+                padding: 24px;
+                flex:2 1 350px;
+                height: 239px;
+                border-radius: 11.5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: 0px 20px 60px rgba(2, 140, 213, 0.15);
+
+                .live-btns{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .live-btn{
+                        background: rgba(12,12,12,0.2);
+                        border-radius: 6px;
+                        width: 171px;
+                        height: 45px;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        transition: all 0.2s ease;
+                        &:hover{
+                            background: rgba(12,12,12,0.3);
+                        }
+                    }
+                    .view-btn{
+                        background: rgba(12,12,12,0.2);
+                        border-radius: 6px;
+                        width: 85px;
+                        height: 41px;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 0.2s ease;
+                        &:hover{
+                            background: rgba(12,12,12,0.3);
+                        }
+                    }
+                }
+
+                .live-numbers{
+                    h1{
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 64px;
+                        font-weight: 700;
+                        line-height: 1px;
+                    }
+                    p{
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 1px;
+                    }
+                }
+            }
+
+            .app__home-progress{
+                color: white;
+                padding: 24px;
+                flex:1 1 200px;
+                height: 239px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background: #7AD1FF;
+                box-shadow: 0px 20px 60px rgba(101, 202, 255, 0.2);
+                border-radius: 11.5px;
+
+                .progress-btns{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .progress-btn{
+                        background: rgba(12,12,12,0.2);
+                        border-radius: 6px;
+                        width: 171px;
+                        height: 45px;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        transition: all 0.2s ease;
+                        &:hover{
+                            background: rgba(12,12,12,0.3);
+                        }
+                    }
+                }
+
+                .progress-numbers{
+                    h1{
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 64px;
+                        font-weight: 700;
+                        line-height: 1px;
+                    }
+                    p{
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 1px;
+                    }
+                }
+            }
+
+            .app__home-completed{
+                color: white;
+                padding: 24px;
+                flex:1 1 200px;
+                height: 239px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background: #B97AFF;
+                box-shadow: 0px 25px 60px rgba(173, 101, 255, 0.3);
+                border-radius: 11.5px;
+
+                .completed-btns{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .completed-btn{
+                        background: rgba(12,12,12,0.2);
+                        border-radius: 6px;
+                        width: 171px;
+                        height: 45px;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        transition: all 0.2s ease;
+                        &:hover{
+                            background: rgba(12,12,12,0.3);
+                        }
+                    }
+                }
+
+                .completed-numbers{
+                    h1{
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 64px;
+                        font-weight: 700;
+                        line-height: 1px;
+                    }
+                    p{
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
