@@ -34,6 +34,11 @@
                 background: #FFFFFF;
                 border: 1px solid #ECE9F1;
                 border-radius: 5px;
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
                 cursor: pointer;
                 &:hover{
                     background: #f9f9f9;
@@ -54,6 +59,109 @@
                 cursor: pointer;
                 &:hover{
                     background: #f9f9f9;
+                }
+            }
+        }
+    }
+
+    .app__current-projects-slides{
+        display: flex;
+        gap: 15px;
+        .slide{
+            background: #FFFFFF;
+            border: 1px solid #ECE9F1;
+            border-radius: 5px;
+            padding: 20px 25px;
+            h2{
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22.7093px;
+                line-height: 0;
+                display: flex;
+                align-items: center;
+                color: #11132A;
+            }
+            p{
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;                
+                color: rgba(24, 39, 58, 0.94);
+            }
+            .price{
+                display: flex;
+                align-items: center;
+                gap: 23px;
+                h4{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #11132A;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+            .progress-bar{
+                width: 100%;
+                progress{
+                    width: inherit;
+                }
+                .label{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p{
+                        font-family: 'Rubik', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        display: flex;
+                        align-items: center;
+                        color: rgba(28, 46, 69, 0.6);
+                    }
+                }
+            }
+            .vender{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .vender-name{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    p{
+                        font-family: 'Rubik', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 134%;
+                        color: rgba(24, 39, 58, 0.94);
+                    }
+                }
+                .vender-view{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 15px;
+                    background: #14A9F9;
+                    color: white;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    border: none;
+                    border-radius: 6.08108px;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(20, 169, 249, 0.9);
+                    }
                 }
             }
         }
