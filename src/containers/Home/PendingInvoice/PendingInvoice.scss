@@ -1,0 +1,106 @@
+.app__pending-invoice{
+    .app__pending-invoice-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .app__pending-invoice-headings{
+            h2{
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 35px;
+                color:#192434;
+            }
+            p{
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                color: #6e6f7d;
+            }
+        }
+        .app__pending-invoice-btns{
+            display: flex;
+            gap: 15px;
+            .app__pending-invoice-dots-btn{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 4px 16px;
+                gap: 10px;
+                width: 56px;
+                height: 56px;
+                background: #FFFFFF;
+                border: 1px solid #ECE9F1;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: #f9f9f9;
+                }
+            }
+        }
+    }
+
+    .app__pending-invoice-card{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .invoice-card{
+            flex: 1;
+            background: #FFFFFF;
+            border: 1px solid #ECE9F1;
+            border-radius: 5px;
+            padding: 20px 25px;
+            h2{
+                font-family: 'Rubik',sans-serif;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 1px;
+                color: #192434;
+            }
+            .amount-approved{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .invoice-profile{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                .invoice-profile-details{
+                    h4{
+                        font-family: 'Rubik',sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 0;
+                        color: #192434;
+                    }
+                    .id-date{
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                        h4{
+                            font-family: 'Rubik',sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 0;
+                            color: rgba(24, 39, 58, 0.94);
+                        }
+                        p{
+                            font-family: 'Rubik',sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 0;
+                            color: rgba(28, 46, 69, 0.6);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

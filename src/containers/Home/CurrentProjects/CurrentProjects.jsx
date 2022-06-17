@@ -4,6 +4,7 @@ import {BsThreeDotsVertical} from 'react-icons/bs';
 import {MdFilterListAlt} from 'react-icons/md';
 import {RiCalendarEventFill} from 'react-icons/ri';
 import vender from '../../../assets/vender.png';
+import {ReactComponent as Rightarrow} from '../../../assets/Vector.svg';
 
 const CurrentProjects = () => {
   return (
@@ -18,7 +19,8 @@ const CurrentProjects = () => {
     <button type='button' className='dots-btn'><BsThreeDotsVertical/></button>
     </div>
     </div>
-    <div className='app__current-projects-slides'>    
+    <div className='app__current-projects-slides'>
+    <div className='slides'>
     {CurrentProjectsList.map((i,k) => {
         return (
             <div className='slide' key={k}>
@@ -40,10 +42,11 @@ const CurrentProjects = () => {
             <img src={i.venderImg} alt="vender"/><p>{i.venderName}</p></div>
             <button type='button' className='vender-view'>View</button>
             </div>
-            
             </div>
         )
     })}
+    </div>
+    <button type='button' className='right-arrow'><span><Rightarrow/></span></button>
     </div>
     </div>
   )

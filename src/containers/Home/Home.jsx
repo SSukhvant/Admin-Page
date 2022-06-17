@@ -4,6 +4,7 @@ import { ReactComponent as Search } from '../../assets/search.svg';
 import { ReactComponent as LiveIcon} from '../../assets/live.svg';
 import { ReactComponent as ProgressIcon} from '../../assets/progress.svg';
 import CurrentProjects from './CurrentProjects/CurrentProjects';
+import PendingInvoice from './PendingInvoice/PendingInvoice';
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
     </div>
 
     <CurrentProjects/>
+    <PendingInvoice/>
     </div>
     </div>
     </>
