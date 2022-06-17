@@ -6,7 +6,6 @@ import { ReactComponent as ProgressIcon} from '../../assets/progress.svg';
 import { ReactComponent as Completed} from '../../assets/complete.svg';
 import CurrentProjects from './CurrentProjects/CurrentProjects';
 import PendingInvoice from './PendingInvoice/PendingInvoice';
-import {BsFillFileEarmarkCheckFill} from 'react-icons/bs';
 
 const Home = () => {
   return (
