@@ -3,6 +3,7 @@ import './Home.scss';
 import { ReactComponent as Search } from '../../assets/search.svg';
 import { ReactComponent as LiveIcon} from '../../assets/live.svg';
 import { ReactComponent as ProgressIcon} from '../../assets/progress.svg';
+import CurrentProjects from './CurrentProjects/CurrentProjects';
 
 const Home = () => {
   return (
@@ -49,6 +50,8 @@ const Home = () => {
     </div>
     </div>
     </div>
+
+    <CurrentProjects/>
     </div>
     </div>
     </>

@@ -1,0 +1,61 @@
+.app__current-projects{
+    margin: 16px 0;
+    .app__current-projects-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .headings{
+            h2{
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 35px;
+                color:#192434;
+            }
+            p{
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                color: #6e6f7d;
+            }
+        }
+        .btns{
+            display: flex;
+            gap: 15px;
+            .filter-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 7px 24px;
+                gap: 10px;
+                width: 119px;
+                height: 56px;
+                background: #FFFFFF;
+                border: 1px solid #ECE9F1;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: #f9f9f9;
+                }
+            }
+            .dots-btn{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 4px 16px;
+                gap: 10px;
+                width: 56px;
+                height: 56px;
+                background: #FFFFFF;
+                border: 1px solid #ECE9F1;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: #f9f9f9;
+                }
+            }
+        }
+    }
+}
