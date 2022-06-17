@@ -3,6 +3,7 @@ import './Activitybar.scss';
 import profile from '../../assets/user.png';
 import {ReactComponent as Rightarrow} from '../../assets/Vector.svg';
 import {BsThreeDotsVertical} from 'react-icons/bs';
+import {FiChevronDown} from 'react-icons/fi';
 
 const Activitybar = () => {
   return (
@@ -20,6 +21,12 @@ const Activitybar = () => {
     <div className='app__upcoming-meeting'>
     <h2>Upcoming Meeting</h2>
     <button type='button' className='threeDot'><BsThreeDotsVertical/></button>
+    </div>
+    <div className='hr'/>
+    <div className='todays-meetings'>
+    <div className='head-btn'>
+    <h2>Today's Meetings</h2>
+    <button type='button' alt="down"><FiChevronDown/></button></div>
     </div>
     </div>
     </div>

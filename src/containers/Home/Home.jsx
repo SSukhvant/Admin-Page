@@ -3,8 +3,10 @@ import './Home.scss';
 import { ReactComponent as Search } from '../../assets/search.svg';
 import { ReactComponent as LiveIcon} from '../../assets/live.svg';
 import { ReactComponent as ProgressIcon} from '../../assets/progress.svg';
+import { ReactComponent as Completed} from '../../assets/complete.svg';
 import CurrentProjects from './CurrentProjects/CurrentProjects';
 import PendingInvoice from './PendingInvoice/PendingInvoice';
+import {BsFillFileEarmarkCheckFill} from 'react-icons/bs';
 
 const Home = () => {
   return (
@@ -43,7 +45,7 @@ const Home = () => {
 
     <div className='app__home-completed'>
     <div className='completed-btns'>
-    <button type='button' className='completed-btn'>Completed projects</button>
+    <button type='button' className='completed-btn'><Completed/> Completed projects</button>
     </div>
     <div className='completed-numbers'>
     <h1>22</h1>
