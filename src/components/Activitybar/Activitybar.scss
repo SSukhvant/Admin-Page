@@ -4,6 +4,7 @@
     right: 0;
     width: 430px;
     // flex: 1 2 430px;
+    overflow-y: scroll;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -87,7 +88,7 @@
             }
         }
 
-        .hr{
+        .hr {
             display: flex;
             justify-self: center;
             align-self: center;
@@ -119,12 +120,111 @@
 
                     color: rgba(24, 39, 58, 0.94);
                 }
-                button{
+
+                button {
                     border: none;
                     background: transparent;
                     color: rgba(24, 39, 58, 0.94);
                     cursor: pointer;
                     font-size: 20px;
+                }
+            }
+
+            .meeting {
+                margin-top: 16px;
+                .duration-btn {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        font-family: 'Rubik', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #028CD5;
+                    }
+
+                    button {
+                        border: none;
+                        background: transparent;
+                    }
+                }
+
+                h4 {
+                    font-family: 'Rubik', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1px;
+                    color: #192434;
+                }
+
+                .due-time {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    p {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        // line-height: 1px;
+                        color: rgba(28, 46, 69, 0.6);
+                    }
+
+                    h6 {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 1px;
+                        color: #192434;
+                    }
+                }
+
+                .clients {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .clients-dp {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            height: 41px;
+                            width: 41px;
+                            border: 1px solid #EDEDED;
+                            border-radius: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: 'Rubik', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 10px;
+                            line-height: 12px;
+                            color: rgba(17, 19, 42, 0.6);
+                        }
+                    }
+
+                    button {
+                        width: 113px;
+                        height: 41px;
+                        background: #14A9F9;
+                        box-shadow: 0px 4px 40px rgba(101, 144, 255, 0.15);
+                        border-radius: 5px;
+                        border: none;
+                        color: white;
+                        font-family: 'Rubik', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
                 }
             }
         }
@@ -145,5 +245,21 @@
         &::-webkit-scrollbar-thumb:hover {
             background: rgba(28, 55, 90, 0.16);
         }
+    }
+    &::-webkit-scrollbar {
+        width: 1px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(28, 55, 90, 0.16);
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(28, 55, 90, 0.16);
     }
 }
