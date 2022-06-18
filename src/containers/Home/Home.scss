@@ -5,6 +5,17 @@
     left: 378px;
     // flex: 2 1 996px;
     padding: 31px 61px;
+    @media screen and (max-width: 900px) {
+        margin: 0 auto;
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+    @media screen and (max-width: 1508px) {
+        right: 430px;
+        left: 0;
+        padding: 31px 41px;
+    }
 
     .app__search{
         flex: 2 1 996px;
@@ -34,6 +45,9 @@
 
     .app__home-main{
         margin-top: 74px;
+        @media screen and (max-width: 900px) {
+        margin-top: 16px;
+        }
         h2{
             font-family: 'Rubik', sans-serif;
             font-weight: 500;

@@ -9,6 +9,9 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
 
     .app__user {
         // flex: 1 2 430px;

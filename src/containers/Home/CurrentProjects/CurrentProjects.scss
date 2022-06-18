@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .headings{
             h2{
                 font-family: 'Rubik', sans-serif;
@@ -65,14 +66,23 @@
     }
 
     .app__current-projects-slides{
+        margin-top: 16px;
         position: relative;
         overflow-x: hidden;
         .slides{
             display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
             gap: 15px;
             width: 200%;
+            @media screen and (max-width: 1231px) {
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            }
         .slide{
-            width: 324px;
+            flex:1 1 324px;
             background: #FFFFFF;
             border: 1px solid #ECE9F1;
             border-radius: 5px;
@@ -185,6 +195,9 @@
             border-radius: 5px;
             z-index: 10;
             cursor: pointer;
+            @media screen and (max-width: 1508px) {
+               display: none;
+            }
         }
     }
 }
