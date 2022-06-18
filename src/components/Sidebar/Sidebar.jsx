@@ -1,9 +1,9 @@
 import React from 'react';
 import './Sidebar.scss';
-// import { ReactComponent as DashboardIcon } from '../../assets/dashboard.svg';
 import {RiDashboardFill,RiCalendarEventFill,RiPhoneFill} from 'react-icons/ri';
 import {IoDocumentText,IoSend} from 'react-icons/io5';
 import {MdNotificationsActive} from 'react-icons/md';
+import {FiTarget} from 'react-icons/fi';
 
 const Sidebar = () => {
   return (
@@ -17,6 +17,8 @@ const Sidebar = () => {
     <li><div/><IoSend/><a href='/' alt="link">Messages</a><span>5</span></li>
     <li><div/><MdNotificationsActive/><a href='/' alt="link">Notifications</a><span>21</span></li>
     <li><div/><RiPhoneFill/><a href='/' alt="link">Contacts</a></li>
+    <li className='promotions'>Promotions</li>
+    <li><div/><FiTarget/><a href='/' alt="link">Promotions</a></li>
     </ul>
     </div>
     </div>
