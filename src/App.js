@@ -1,15 +1,16 @@
 import './App.scss';
-import { Activitybar, Sidebar } from './components';
-import { Home } from './containers';
+import {Routes, Route, Navigate} from 'react-router-dom';
+import { Login } from './containers';
+import Main from './Main';
 
 function App() {
   return (
     <>
-     <div className='app'>
-     <Sidebar/>
-     <Home/>
-     <Activitybar/>
-    </div>
+    <Routes>
+    <Route exact path='/' element={<Main/>}/>
+    <Route exact path='/login' element={<Login/>}/>
+    <Route path="*" element={<Navigate to="/" replace />}/>
+    </Routes>
     </>
   );
 }
