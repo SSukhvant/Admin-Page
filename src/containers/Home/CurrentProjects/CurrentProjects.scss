@@ -75,14 +75,18 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 15px;
-            width: 200%;
+            width: 120%;
             @media screen and (max-width: 1231px) {
             width: 100%;
-            justify-content: center;
-            flex-direction: column;
+            // justify-content: center;
+            // flex-direction: column;
             }
+            @media screen and (max-width: 1508px) {
+                width: 100%;
+                }
         .slide{
             flex:1 1 324px;
+            width: 100%;
             background: #FFFFFF;
             border: 1px solid #ECE9F1;
             border-radius: 5px;
