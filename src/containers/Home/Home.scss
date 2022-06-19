@@ -1,26 +1,21 @@
 .app__home{
-    position: absolute;
-    top: 0;
-    right: 430px;
-    left: 378px;
-    // flex: 2 1 996px;
-    padding: 31px 61px;
-    @media screen and (max-width: 900px) {
-        // margin: 0 auto;
-        width: 100%;
-        padding: 31px 16px;
-        right: 0;
-        left: 0;
-    }
-    @media screen and (max-width: 1508px) {
-        right: 430px;
-        left: 0;
-        padding: 31px 41px;
-    }
-
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     .app__home-main{
+        position: absolute;
+        top: 0;
+        right: 430px;
+        left: 378px;
+        padding: 31px 61px;
         @media screen and (max-width: 900px) {
-        margin-top: 16px;
+            position: relative;
+            padding: 31px 16px;
+        }
+        @media screen and (max-width: 1508px) {
+            right: 430px;
+            left: 0;
+            padding: 31px 41px;
         }
         .app__search{
             flex: 2 1 996px;
