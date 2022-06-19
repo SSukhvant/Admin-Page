@@ -11,12 +11,11 @@ const Home = () => {
   return (
     <>
     <div className='app__home'>
+    <div className='app__home-main'>
     <div className='app__search'>
     <i><Search/></i>
     <input type="search" placeholder="search for products"/>
     </div>
-
-    <div className='app__home-main'>
     <h2>Welcome back, Andrew</h2>
     <p>Have a look at the Quick Progress bar.</p>
 

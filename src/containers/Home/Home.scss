@@ -8,7 +8,7 @@
     @media screen and (max-width: 900px) {
         // margin: 0 auto;
         width: 100%;
-        padding: 31px 21px;
+        padding: 31px 16px;
         right: 0;
         left: 0;
     }
@@ -18,36 +18,34 @@
         padding: 31px 41px;
     }
 
-    .app__search{
-        flex: 2 1 996px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        i{
-            position: absolute;
-            margin-left: 24px;
-        }
-
-        input {
-            flex:1 1 80%;
-            height: 72px;
-            background: #f7f7f7;
-            border-radius: 5px;
-            border-style: none;
-            font-size: 16px;
-            padding: 0 80px;
-
-            &:focus{
-                outline: none;
-            }
-        }
-    }
-
     .app__home-main{
-        margin-top: 74px;
         @media screen and (max-width: 900px) {
         margin-top: 16px;
+        }
+        .app__search{
+            flex: 2 1 996px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+    
+            i{
+                position: absolute;
+                margin-left: 24px;
+            }
+    
+            input {
+                flex:1 1 80%;
+                height: 72px;
+                background: #f7f7f7;
+                border-radius: 5px;
+                border-style: none;
+                font-size: 16px;
+                padding: 0 80px;
+    
+                &:focus{
+                    outline: none;
+                }
+            }
         }
         h2{
             font-family: 'Rubik', sans-serif;
