@@ -12,6 +12,7 @@ const Home = () => {
     <>
     <div className='app__home'>
     <div className='app__home-main'>
+    <div className='app__logo'><a href='https://www.google.com/'>LOGO</a></div>
     <div className='app__search'>
     <i><Search/></i>
     <input type="search" placeholder="search for products"/>

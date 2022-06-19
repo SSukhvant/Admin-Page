@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Sidebar.scss';
 import {RiDashboardFill,RiCalendarEventFill,RiPhoneFill} from 'react-icons/ri';
-import {IoDocumentText,IoSend} from 'react-icons/io5';
+import {IoDocumentText,IoSend,IoClose} from 'react-icons/io5';
 import {MdNotificationsActive} from 'react-icons/md';
 import {FiTarget} from 'react-icons/fi';
-import {BsChevronRight} from 'react-icons/bs';
+// import {BsChevronRight} from 'react-icons/bs';
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 const Sidebar = () => {
   const [toggle, setToggle] = useState(false);
@@ -28,11 +29,11 @@ const Sidebar = () => {
     </ul>
     </div>
     </div>
-    <div className='app__menubar1'><button type='button' className='toggle-btn' onClick={handleToggle}><BsChevronRight/></button></div>
+    <div className='app__menubar1'><button type='button' className='toggle-btn' onClick={handleToggle}><GiHamburgerMenu/></button></div>
     {toggle && (
       <div className='app__menu'>
       <div className='app__logo'><a href='https://www.google.com/'>LOGO</a></div>
-      <div className='app__menubar'><button type='button' className='toggle-btn' onClick={handleToggle}><BsChevronRight/></button></div>
+      <button type='button' className='toggle-btn' onClick={handleToggle}><IoClose/></button>
 
       <div className='app__menu-links'>
       <ul>
